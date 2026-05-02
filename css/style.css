@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.header{
+    background-color: #FB9B8F;
+    padding: 1rem 0;
+}
+
+.header h2{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.buttons button{
+    height: 40px;
+    width: 120px;
+    color: #fff;
+    border:1.5px solid #fff;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .20s ease;
+}
+
+.buttons button:hover a{
+    color: #FB9B8F !important;
+}
+.buttons button:hover{
+    background: #fff;
+    color: #FB9B8F !important;
+}
+
+#compliment{
+    color: #333;
+    font-weight:bold;
+}
+
+.compliment-form{
+    padding: 0 2rem;
+    box-shadow: 0 0 10px rgba(51, 51, 51,.20);
+}
+
+.compliment-form label,
+#loginpage,
+#signup{
+    color: #FB9B8F !important;
+}
+
+#yourname:focus,
+#classfellowname:focus,
+#textarea:focus{
+    border-color:#FB9B8F !important;
+    box-shadow:0 0 1px 3px rgba(251, 155, 143,.60) !important;
+}
+
+#para{
+    color: #333;
+}
+
+#textarea{
+    height: 200px;
+}
+
+#submit{
+    width: 100%;
+    background-color: #FB9B8F;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.bgactive{
+    background-color: green !important;
+}
+.bgErr{
+    background-color: rgb(247, 87, 87) !important;
+}
+
+.fieldactive{
+    border-color:red !important;
+}
+
+.nameError,
+.classError,
+.nameErr,
+.lastErr,
+.emailErr,
+.passwordErr,
+.actionErr,
+.msgError{
+    color:red;
+    font-size: 15px;
+    display: none;
+}
+
+.nameActive{
+    display: block !important;
+}
+
+#signForm,
+#loginForm,
+#eidtform{
+    border-radius: 10px;
+    /* padding:2rem; */
+    box-shadow: 0 0 10px rgba(51, 51, 51,.20);
+}
+
+#signForm > h2,
+#loginForm > h2{
+    color: #FB9B8F;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+#signForm > h2::after,
+#loginForm > h2::after{
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FB9B8F;
+    height: 3px;
+    width: 15%;
+}
+
+
+#signForm label,
+#loginForm label,
+#eidtform label{
+    color: #f38172;
+    font-size: 15px;
+}
+
+#signupButton,
+#loginButton,
+#editbutton{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none !important;
+    border: none !important;
+    margin-top: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: #FB9B8F !important;
+}
+
+#signForm input:focus,
+#loginForm input:focus,
+#editform input:focus,
+#editform select:focus{
+    border-color:#FB9B8F !important;
+    box-shadow:0 0 1px 3px rgba(251, 155, 143,.60) !important;
+}
+
+.tableheadbg{
+    background-color: #ce7064 !important;
+}
+
+.fa-edit,
+.fa-trash{
+    color: #FB9B8F;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#formContainer{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 100vw;
+    height: 100%;
+    z-index: 99;
+    transform: scale(.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .50s ease;
+    background-color: rgba(51, 51, 51, .30);
+}
+
+#formContainer #cross{
+    position: absolute ;
+    top:20px;
+    cursor: pointer;
+    right:15px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.firstNamefieldErr{
+    border-color: red !important;
+}
+
+.fa-eye,
+.fa-eye-slash{
+    position: absolute;
+    color: #FB9B8F;
+    top:50%;
+    font-size: 1.2rem;
+    background-color: #fff;
+    cursor: pointer;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.fa-eye-slash{
+    display: none;
+}
