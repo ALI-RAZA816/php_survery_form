@@ -1,5 +1,5 @@
-CREATE DATABASE `compliment`;
-USE compliment;
+CREATE DATABASE `survey`;
+USE survey;
 
 
 CREATE TABLE `compliment_get`(
