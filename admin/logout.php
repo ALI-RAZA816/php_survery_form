@@ -1,15 +1,15 @@
 <?php 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    
-include "config.php";
-    session_start();
-    session_unset();
-    session_destroy();
+    include "config.php";
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        
+        session_start();
+        session_unset();
+        session_destroy();
 
-    echo "Logout Successfully";
-    mysqli_close($conn);
+        echo "Logout Successfully";
+        mysqli_close($conn);
 
-}else{
-    header("Location: http://localhost/firstexperience/admin/Not-found.php");
-}
+    }else{
+        header("Location: {$HOST_NAME}/admin/Not-found.php");
+    }
 ?>

@@ -1,7 +1,8 @@
 <?php 
     include "header.php";
+    include "config.php";
     if($_SESSION['role'] !== 'admin'){
-        header("Location: {$HOST_NAME}/admin/login.php");
+        header("Location: {$HOST_NAME}/index.php");
         die();
     }
 ?>

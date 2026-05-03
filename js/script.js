@@ -215,7 +215,7 @@ $(document).ready(function(){
                     $(".actionErr").html("Your action can't recorded");
                 }else if(data == "Successfully uploaded"){
                     loadusers();
-                    window.location.href = "http://localhost/firstexperience/admin/login.php";
+                    window.location.href = "http://localhost/php_survery_form/admin/login.php";
                     $("#first_name").val("");
                     $("#last_name").val("");
                     $("#email").val("");
@@ -270,7 +270,7 @@ $(document).ready(function(){
             },
             success:function(data){
                 if(data == "success"){
-                    window.location.href = "http://localhost/firstexperience/show-record.php";
+                    window.location.href = "http://localhost/php_survery_form/show-record.php";
                 }else if(data == "Invalid Email"){
                     $("#loginEmailErr").html("Invalid Email");
                     $("#loginEmailErr").css({
@@ -304,7 +304,7 @@ $(document).ready(function(){
             url:"logout.php",
             success:function(data){
                 if(data == "Logout Successfully"){
-                    window.location.href="http://localhost/firstexperience/admin/index.php";
+                    window.location.href="http://localhost/php_survery_form/admin/index.php";
                 }
             }
         });

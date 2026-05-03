@@ -1,4 +1,4 @@
 <?php 
-    $HOST_NAME = "http://localhost/firstexperience";
-    $conn = mysqli_connect("localhost","root","","compliment");
+    $HOST_NAME = "http://localhost/php_survery_form";
+    $conn = mysqli_connect("localhost","root","","survey");
 ?>
