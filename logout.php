@@ -1,6 +1,6 @@
 <?php 
-    include "config.php";
-    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    if($_SERVER['REQUEST_METHOD'] === 'GET'){
+        include "config.php";
         session_start();
         session_unset();
         session_destroy();
